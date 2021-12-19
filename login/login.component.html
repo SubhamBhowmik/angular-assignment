@@ -1,0 +1,21 @@
+<div fxLayoutAlign='center center'fxFlexFill>
+    <mat-card  fxflex="25">
+       <h1>Login</h1>
+        <form fxLayoutAlign='stretch'fxLayout='column' [formGroup]='loginForm' (ngSubmit)='login()' >
+            <mat-form-field class="" appearance="fill">
+              <mat-label>Email</mat-label>
+              <input formControlName='email' matInput placeholder="Email" ><br>
+              <span class="text-danger" *ngif="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email is required</span>
+            </mat-form-field>
+             
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input formContolName="password" matInput placeholder="password"  type="password"><br>
+                <span class="text-danger"  *ngif="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" >*Email is required</span>
+              </mat-form-field>
+
+              <button type="submit" [disabled]='!loginForm.valid' class="fadeIn fourth"  value="Log In">Login</button>
+          </form>
+          <a class="ank"routerLink="/signup">New User?Click to Sign Up</a>
+    </mat-card>
+</div>

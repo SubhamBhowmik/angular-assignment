@@ -1,0 +1,46 @@
+<div fxLayoutAlign='center center' fxFlexFill>
+    <mat-card fxflex="25">
+        <h1>Sign Up</h1>
+        <h6>Register Yourself</h6>
+        <form fxLayoutAlign='stretch' fxLayout='column'  [formGroup]='signupForm' (ngSubmit)='signUp()'>
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input formControlName='email' matInput placeholder="Email">
+            </mat-form-field>
+
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Firstname</mat-label>
+                <input  formControlName='firstname'  matInput placeholder="Firstname" value="">
+            </mat-form-field>
+
+
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Lastname</mat-label>
+                <input   formControlName='lastname'  matInput placeholder="Lastname" value="">
+            </mat-form-field>
+
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input  formControlName='password'  matInput placeholder="Password"  type="password">
+            </mat-form-field>
+
+
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Address</mat-label>
+                <input  formControlName='address'  matInput placeholder="Address" value="" >
+
+            </mat-form-field>
+             
+            
+            <mat-form-field class="" appearance="fill">
+                <mat-label>Birthdate</mat-label>
+                <input  formControlName='birthdate'  matInput placeholder="Birthdate" value="">
+            </mat-form-field>
+            
+           
+            <input type="submit" class="fadeIn fourth" value="LogIn">
+            <a routerLink="/login">Already registered? Click to Login</a>
+        </form>
+
+    </mat-card>
+</div>

@@ -1,0 +1,63 @@
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  padding: 10px;
+  border: none;
+  opacity: 50%;
+  height: 35px;
+  -webkit-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  background-color: aquamarine;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.container-form {
+  height: 360px;
+  width: 40%;
+}
+
+.mat-card {
+  height: auto;
+  width: 40%;
+  -webkit-transition: -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+button, input, optgroup, select, textarea {
+  margin-bottom: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+/*# sourceMappingURL=login.component.css.map */
