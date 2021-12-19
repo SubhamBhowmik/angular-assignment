@@ -14,7 +14,7 @@
                 <span class="text-danger"  *ngif="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" >*Email is required</span>
               </mat-form-field>
 
-              <button type="submit" [disabled]='!loginForm.valid' class="fadeIn fourth"  value="Log In">Login</button>
+              <button type="submit"  class="fadeIn fourth"  value="Log In">Login</button>
           </form>
           <a class="ank"routerLink="/signup">New User?Click to Sign Up</a>
     </mat-card>
